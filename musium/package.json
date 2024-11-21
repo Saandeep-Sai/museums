@@ -1,0 +1,31 @@
+{
+  "name": "resort_booking",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "axios": "^1.7.7",
+    "date-fns": "^3.6.0",
+    "mongoose": "^8.6.0",
+    "next-auth": "^4.24.8",
+    "react": "^18.3.1",
+    "react-date-range": "^2.0.1",
+    "react-dom": "^18",
+    "react-loader-spinner": "^6.1.6",
+    "resort_booking": "file:"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.7",
+    "next": "^15.0.3"
+  }
+}

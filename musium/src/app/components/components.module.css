@@ -1,0 +1,393 @@
+
+
+
+.formContainer{
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formSection{
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 30px 20px;
+    background:rgb(114, 109, 109)
+}
+.formSection h3{
+    
+    width:80%;
+    margin-bottom: 5px;
+
+}
+.input{
+    font-size: 1.2rem;
+    width:80%;
+    height:2.2rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.regBtn{
+    padding: 10px 50px;
+    background: rgb(76, 70, 141);
+    color: white;
+}
+
+/* add product form  */
+.container{
+    height:100vh;
+}
+.container h1{
+        margin: 10px 50px;
+}
+
+.container h3{
+    margin-bottom: 5px;
+}
+.fields{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px
+}
+.container input{
+    height: 30px;
+    width: 400px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+.textField{
+    display: flex;
+    flex-direction: column;
+    padding: 0 180px;
+}
+.container button{
+    padding: 10px 50px;
+    background: rgb(32, 32, 95);
+    color: white;
+}
+.submit{
+    text-align: center;
+}
+
+
+
+/*chat bot page*/
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 20%;
+  background: #e0e0e0;
+  padding: 15px;
+  overflow-y: auto;
+  border-right: 2px solid #ccc;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.dataRow {
+  background: #a0a0a0;
+  margin: 5px 0;
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Main content styles */
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+  /* Top buttons container */
+  .topButtons {
+    display: flex;
+    gap: 15px;
+    margin-left: 750px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+  
+  .topButton {
+    padding: 10px 20px;
+    background: #3c3b6e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .topButton:hover {
+    background: #2c2b5e;
+  }
+
+/* Chatbot display container */
+.chatbotDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  max-width: 1500px;
+  width: 100%;
+  height: 100%; /* Reserve space for input box */
+  border: 1px solid #ccc;
+  overflow: hidden; /* Prevents overflow issues */
+  position: relative;
+  margin: 10px 0;
+}
+
+/* Chat history styles */
+/* Chat History styles */
+.chatHistory {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  padding: 15px;
+  padding-bottom: 100px; /* Adjust to match the height of the input box */
+  background: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+
+.chatbotImage {
+  width: 350px;
+  height: auto;
+  margin-left: 540px;
+  margin-top: 150px;
+}
+/* Chat Bubble styles */
+.chatBubble {
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word; /* Allow the bubble to resize based on content */
+  display: inline-flex;
+  width: auto;           /* Width based on content */
+  min-width: 50px;       /* Optional: Set a minimum width */
+  max-width: 80%;        /* Optional: Set a max-width for the bubble */
+  word-wrap: break-word;
+  overflow-wrap: break-word; /* Support for all browsers */
+}
+
+
+/* User Bubble styles */
+.userBubble {
+  background: #3c3b6e;
+  color: white;
+  margin-left: auto; /* Align to the right */
+  border-bottom-right-radius: 0;
+  min-width: 50px;    /* Minimum width */
+}
+
+/* Bot Bubble styles */
+.botBubble {
+  background: #b2ffb2;
+  color: black;
+  margin-right: auto; /* Align to the left */
+  border-bottom-left-radius: 0;
+  min-width: 50px;    /* Minimum width */
+}
+
+
+/* Chat input field styles */
+.chatInput {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 15px;
+  background: white;
+  border-top: 1px solid #ccc;
+  height: 70px; /* Fixed height */
+}
+
+
+.inputField {
+  flex: 1;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+}
+
+.mic {
+  font-size: 20px; /* Adjust size */
+  margin: 0;       /* Remove any default margin */
+  color: white;    /* Icon color */
+}
+
+.micButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3c3b6e;
+  color: white;
+  border: 1px solid #3c3b6e;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.micButton:hover {
+  background: #2c2b5e;
+}
+
+
+/* Smooth scroll for chat history */
+.chatHistory::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatHistory::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* Ticket display*/
+
+/* Media Queries */
+
+/* For devices with a max width of 1200px (large tablets, smaller laptops) */
+@media screen and (max-width: 1200px) {
+  .formSection, .fields {
+    width: 70%;
+    padding: 20px 10px;
+  }
+
+  .container input {
+    width: 300px;
+  }
+
+  .textField {
+    padding: 0 50px;
+  }
+
+  .chatbotImage {
+    margin-left: 300px;
+  }
+
+  .chatbotDisplay {
+    max-width: 1200px;
+  }
+}
+
+/* For devices with a max width of 992px (tablets) */
+@media screen and (max-width: 992px) {
+  .formSection, .fields {
+    width: 80%;
+  }
+
+  .container input {
+    width: 250px;
+  }
+
+  .textField {
+    padding: 0 30px;
+  }
+
+  .chatbotImage {
+    margin-left: 200px;
+    width: 250px;
+  }
+
+  .chatbotDisplay {
+    max-width: 992px;
+  }
+
+  .chatInput {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .inputField {
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+
+  .micButton {
+    border-radius: 15px;
+    justify-content: flex-start;
+    padding: 10px 15px;
+  }
+}
+
+/* For devices with a max width of 768px (small tablets, large phones) */
+@media screen and (max-width: 768px) {
+  .formSection, .fields {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .container input {
+    width: 200px;
+  }
+
+  .chatbotImage {
+    margin-left: 100px;
+    width: 200px;
+  }
+
+  .chatbotDisplay {
+    max-width: 768px;
+    height: auto;
+  }
+}
+
+/* For devices with a max width of 576px (mobile phones) */
+@media screen and (max-width: 576px) {
+  .formSection, .fields {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .container input {
+    width: 100%;
+  }
+
+  .textField {
+    padding: 0 10px;
+  }
+
+  .chatbotImage {
+    margin: 0 auto;
+    width: 150px;
+  }
+
+  .chatbotDisplay {
+    max-width: 100%;
+  }
+
+  .topButtons {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  .topButton {
+    padding: 10px 30px;
+    text-align: center;
+  }
+}
